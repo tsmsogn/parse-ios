@@ -55,6 +55,15 @@
                                     <segue destination="Jpq-jN-lFr" kind="show" id="JsS-O2-FAq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2n-tN-b2v">
+                                <rect key="frame" x="238" y="437" width="125" height="30"/>
+                                <state key="normal" title="Log in with Twitter">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logInWithTwitterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OAS-uM-XGz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -62,6 +71,8 @@
                             <constraint firstItem="qae-Zf-5Rd" firstAttribute="trailing" secondItem="GIF-Oo-8OF" secondAttribute="trailing" id="6kR-eo-AMR"/>
                             <constraint firstItem="die-mc-abi" firstAttribute="top" secondItem="syB-pu-YQR" secondAttribute="bottom" constant="8" symbolic="YES" id="8MH-fF-CLR"/>
                             <constraint firstItem="qae-Zf-5Rd" firstAttribute="centerX" secondItem="syB-pu-YQR" secondAttribute="centerX" id="8Mb-Lw-1cT"/>
+                            <constraint firstItem="f2n-tN-b2v" firstAttribute="top" secondItem="O3f-8G-xos" secondAttribute="bottom" constant="8" symbolic="YES" id="DFh-Xy-rnw"/>
+                            <constraint firstItem="f2n-tN-b2v" firstAttribute="centerX" secondItem="O3f-8G-xos" secondAttribute="centerX" id="GcI-fU-KLU"/>
                             <constraint firstItem="syB-pu-YQR" firstAttribute="top" secondItem="qae-Zf-5Rd" secondAttribute="bottom" constant="8" symbolic="YES" id="GjT-Qg-MwQ"/>
                             <constraint firstItem="syB-pu-YQR" firstAttribute="centerX" secondItem="die-mc-abi" secondAttribute="centerX" id="aNS-KM-bGz"/>
                             <constraint firstItem="qae-Zf-5Rd" firstAttribute="leading" secondItem="GIF-Oo-8OF" secondAttribute="leading" id="cqJ-fu-hm4"/>
@@ -74,6 +85,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="RPZ-xO-r4c"/>
                     <connections>
+                        <outlet property="forgotPasswordLabel" destination="O3f-8G-xos" id="VOE-0l-34a"/>
+                        <outlet property="logInWithTwitter" destination="f2n-tN-b2v" id="71d-QO-3yJ"/>
                         <outlet property="passwordTextField" destination="qae-Zf-5Rd" id="60l-3F-Gkc"/>
                         <outlet property="signInButton" destination="syB-pu-YQR" id="Reg-xE-Shk"/>
                         <outlet property="signUpButton" destination="die-mc-abi" id="jK5-TX-8gE"/>

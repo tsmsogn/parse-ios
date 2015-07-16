@@ -13,7 +13,9 @@ class ViewController: UIViewController {
     @IBOutlet var passwordTextField : UITextField!
     @IBOutlet var signInButton : UIButton!
     @IBOutlet var signUpButton : UIButton!
-    @IBOutlet var forgotPasswordLabel : UILabel!
+    @IBOutlet var forgotPasswordLabel: UIButton!
+    @IBOutlet var logInWithTwitter: UIButton!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,22 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func logInWithTwitterButtonPressed(sender: AnyObject) {
+        PFTwitterUtils.logInWithBlock {
+            (user: PFUser?, error: NSError?) -> Void in
+            if let user = user {
+                if user.isNew {
+                    println("User signed up and logged in with Twitter!")
+                } else {
+                    println("User logged in with Twitter!")
+                }
+                self.performSegueWithIdentifier("go_to_main", sender: self)
+            } else {
+                println("Uh oh. The user cancelled the Twitter login.")
+            }
+        }
     }
     
     @IBAction func signInButtonPressed(sender : AnyObject) {

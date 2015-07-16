@@ -27,6 +27,8 @@
 		C75982E719D7F2100019280E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75982E619D7F2100019280E /* Bolts.framework */; };
 		C75982EF19D83E700019280E /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75982EE19D83E700019280E /* ForgotPasswordViewController.swift */; };
 		C75982F119D852640019280E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75982F019D852640019280E /* MainViewController.swift */; };
+		C7BE73F01B5775CF00D7C784 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7BE73EF1B5775CF00D7C784 /* Social.framework */; };
+		C7BE73F21B5775D600D7C784 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7BE73F11B5775D600D7C784 /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		C75982E619D7F2100019280E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		C75982EE19D83E700019280E /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		C75982F019D852640019280E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C7BE73EF1B5775CF00D7C784 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		C7BE73F11B5775D600D7C784 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7BE73F21B5775D600D7C784 /* Accounts.framework in Frameworks */,
+				C7BE73F01B5775CF00D7C784 /* Social.framework in Frameworks */,
 				C75982E019D7EAF20019280E /* SystemConfiguration.framework in Frameworks */,
 				C75982DE19D7EAEC0019280E /* StoreKit.framework in Frameworks */,
 				C75982DC19D7EAE50019280E /* Security.framework in Frameworks */,
@@ -100,6 +106,8 @@
 		C759829F19D7E9CD0019280E = {
 			isa = PBXGroup;
 			children = (
+				C7BE73F11B5775D600D7C784 /* Accounts.framework */,
+				C7BE73EF1B5775CF00D7C784 /* Social.framework */,
 				C75982E619D7F2100019280E /* Bolts.framework */,
 				C75982E119D7EB6A0019280E /* Parse.framework */,
 				C75982DF19D7EAF20019280E /* SystemConfiguration.framework */,
@@ -478,6 +486,7 @@
 				C75982C919D7E9CD0019280E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C75982CA19D7E9CD0019280E /* Build configuration list for PBXNativeTarget "ParseTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +495,7 @@
 				C75982CC19D7E9CD0019280E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

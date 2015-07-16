@@ -6,6 +6,7 @@
 - Sign up
 - Log in
 - Log out
+- Twitter log in
 - Resetting password
 
 ## How to Run
@@ -19,4 +20,9 @@
   ```swift
   Parse.setApplicationId("APPLICATION_ID", clientKey: "CLIENT_KEY")
   ```
-4. Build and run.
+4. Copy your new Twitter app's Consumer Key and Consumer Secret into `AppDelegate.swift`:
+
+  ```swift
+  PFTwitterUtils.initializeWithConsumerKey("YOUR CONSUMER KEY",  consumerSecret:"YOUR CONSUMER SECRET")
+  ```
+5. Build and run.
